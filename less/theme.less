@@ -1,0 +1,224 @@
+
+//
+// Load core variables and mixins
+// --------------------------------------------------
+
+@import "variables.less";
+@import "mixins.less";
+
+/* ==== Google font ==== */
+@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Montserrat:700|Open+Sans');
+
+
+@profile-background: #fcfaf5;
+@profile-darkbrown: #8C715A;
+@section-headerbrown:#6c5744;
+
+// ------------------------------
+// Common Section
+// ------------------------------
+
+html {
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+      width: 100%;
+      height: 100%;
+      font-family: 'Lato',sans-serif;
+  font-weight: 300;
+  font-size: @font-size-base;
+      color: #666;
+      background-color: #fff;
+
+}
+
+.section-heading
+{
+  color:@section-headerbrown;
+  //padding: 50px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  text-align: center;
+  @media screen and (min-width: @screen-sm-min) {
+      padding:0;
+  }
+  h3{
+    font-family: Montserrat,sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+  }
+}
+
+// ------------------------------
+// Navigation
+// ------------------------------
+.navbar {
+    margin: 0px;
+    .navbar-nav {
+        a{
+          padding-top:0px;
+          font-size: 16px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          font-weight: 400;
+        }
+    }
+}
+
+// ------------------------------
+// Message
+// ------------------------------
+.message
+{
+  width:100%;
+  height: 80%;
+  position:relative;
+  background: url(../img/header.jpg) no-repeat top center;
+
+       .slogan{
+        padding:20% 0 0 0;
+          text-align: center;
+          h1{ 
+              font-weight: 700;
+              font-size: @font-size-base + 30;
+              color:     #fff;
+              letter-spacing: 1px;
+              text-shadow: -1px 0 10px #000;
+          }
+          h2{
+              font-weight: 500;
+              font-size: @font-size-base + 8;
+              letter-spacing: 1px;
+              color:     @profile-darkbrown;
+              text-shadow: -1px 0 10px #fff;
+          }
+       }
+}
+// ------------------------------
+// Service
+// ------------------------------
+.service{
+        background-color: @profile-background;
+
+        line-height: 180%;
+        font-size: @font-size-base + 5;
+        .kind{
+        padding-bottom: 20px;
+          text-align: center;
+          h4
+          {
+              text-transform: uppercase;
+              font-family: Montserrat,sans-serif;
+              font-weight: 700;
+              letter-spacing: 5px;
+          } 
+      }
+}
+// ------------------------------
+// History
+// ------------------------------
+.history{
+        h4 {
+                padding-bottom: 20px;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: Montserrat,sans-serif;
+                font-weight: 700;
+                letter-spacing: 3px;
+        }
+       img{
+             height: 270px;
+               @media screen and (max-width: @screen-sm-min) {
+                display: block;
+                margin:0 auto;
+              } 
+       }
+}
+// ------------------------------
+// Works
+// ------------------------------
+.works{
+    background-color: @profile-background;
+
+        h4 {
+                padding-bottom: 20px;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: Montserrat,sans-serif;
+                font-weight: 700;
+                letter-spacing: 3px;
+        }
+       img{
+             height: 270px;
+       }
+}
+// ------------------------------
+// Profile
+// ------------------------------
+.profile
+{
+  .avater
+  {
+            img{
+              width:200px;
+            }
+  }
+   
+  .desc
+  {
+          line-height: 180%;
+          font-size: @font-size-base + 2;
+  }
+
+}
+// ------------------------------
+// Contact
+// ------------------------------
+.contact{
+    background-color: @profile-background;
+    .btn-submit {
+     background: #D98484;
+     color: #fff;
+      border-radius: 10;
+      // text-transform: uppercase;
+      // font-family: Montserrat,sans-serif;
+      font-weight: 700;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+  }
+
+  .btn-submit:hover,
+  .btn-submit:focus,
+  .btn-submit:active,
+  .btn-submit.active {
+    background-color: @profile-darkbrown;
+    border-color: @profile-darkbrown;
+  }
+}
+// ------------------------------
+// Footer
+// ------------------------------
+.footer{
+  color:#fff;
+  padding:30px;
+  background-color: @profile-darkbrown;
+  text-align: center;
+      ul{
+              list-style:none;
+              margin-top:30px;
+              text-align:center;  
+              li {
+                    padding: 10px;
+                    display:inline;
+                    a{
+                      color:#fff;
+                    }
+                  }
+        }
+}
+
+
